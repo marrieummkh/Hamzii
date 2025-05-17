@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hamzii Transport Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white py-4 shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-xl font-semibold">Hamzii Transport</a>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-6">
+                        <li><a href="#home" class="hover:text-blue-200 transition duration-300">Home</a></li>
+                        <li><a href="#services" class="hover:text-blue-200 transition duration-300">Services</a></li>
+                        <li><a href="#blog" class="hover:text-blue-200 transition duration-300">Blog</a></li>
+                        <li><a href="#contact" class="hover:text-blue-200 transition duration-300">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="hamburger-btn" class="md:hidden text-white focus:outline-none" aria-label="Toggle Navigation">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-50">
+        <div class="bg-gray-800 w-80 h-full absolute right-0 p-6">
+            <div class="flex justify-end mb-4">
+                <button id="close-menu-btn" class="text-white focus:outline-none" aria-label="Close Menu">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <nav class="block">
+                <ul class="space-y-4">
+                    <li><a href="#home" class="block text-lg text-white hover:text-blue-200 transition duration-300">Home</a></li>
+                    <li><a href="#services" class="block text-lg text-white hover:text-blue-200 transition duration-300">Services</a></li>
+                    <li><a href="#blog" class="block text-lg text-white hover:text-blue-200 transition duration-300">Blog</a></li>
+                    <li><a href="#contact" class="block text-lg text-white hover:text-blue-200 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section id="home" class="bg-gray-100 py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-semibold text-blue-700 mb-4">Reliable Transportation Services in Westridge 3</h2>
+                    <p class="text-gray-700 mb-6">Welcome to Hamzii Transport, your trusted partner for safe and efficient transportation solutions. We connect you with your destination with comfort and ease.</p>
+                    <a href="#services" class="bg-blue-500 text-white py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300">Our Services</a>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1552611805-e1f9804e7bcb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Transportation" class="rounded-lg shadow-lg w-full" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="bg-blue-50 py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-semibold text-blue-700 text-center mb-8">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4">Local Transportation</h3>
+                    <p class="text-gray-700 mb-4">Fast and reliable transportation within Westridge 3 and surrounding areas.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Point-to-point service</li>
+                        <li>Errands and shopping trips</li>
+                        <li>Daily commuting</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4">Airport Transfers</h3>
+                    <p class="text-gray-700 mb-4">Comfortable and timely transfers to and from Islamabad International Airport.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Meet and greet service</li>
+                        <li>Luggage assistance</li>
+                        <li>Flight tracking</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-4">Corporate Services</h3>
+                    <p class="text-gray-700 mb-4">Professional transportation solutions for businesses.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Meetings and events</li>
+                        <li>Client transportation</li>
+                        <li>Employee shuttles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="bg-gray-100 py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-semibold text-blue-700 text-center mb-8">Our Blog</h2>
+            <div id="blog-posts" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                </div>
+            <div class="mt-8 text-center">
+                <a href="#" id="view-all-btn" class="bg-blue-500 text-white py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300">View All Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-blue-100 py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-semibold text-blue-700 text-center mb-8">Contact Us</h2>
+            <div class="bg-white rounded-lg shadow-md p-6 md:p-10">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-600 mb-4">Get in Touch</h3>
+                        <p class="text-gray-700 mb-6">We are here to answer your questions and provide the best transportation solutions. Contact us through the following channels:</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-center">
+                                <i class="fas fa-phone text-blue-500 mr-3 text-lg"></i>
+                                <a href="tel:+923705954448" class="text-blue-600 hover:text-blue-800 transition duration-300">+923705954448</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope text-blue-500 mr-3 text-lg"></i>
+                                <a href="mailto:marrieum325@gmail.com" class="text-blue-600 hover:text-blue-800 transition duration-300">marrieum325@gmail.com</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fab fa-whatsapp text-blue-500 mr-3 text-lg"></i>
+                                <a href="https://wa.me/923705954448" class="text-blue-600 hover:text-blue-800 transition duration-300">WhatsApp Us</a>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fab fa-facebook text-blue-500 mr-3 text-lg"></i>
+                                <a href="https://www.facebook.com/yourtransportpage" class="text-blue-600 hover:text-blue-800 transition duration-300">Facebook</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-600 mb-4">Send us a Message</h3>
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                                <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Name" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Email" required>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                                <textarea id="message" name="message" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-32 resize-y" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="bg-blue-500 text-white py-3 px-6 rounded-full hover:bg-blue-700 transition duration-300">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 Hamzii Transport. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburgerBtn = document.getElementById("hamburger-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const closeMenuBtn = document.getElementById("close-menu-btn");
+        const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+        const navLinks = document.querySelectorAll('header nav a');
+        const sections = document.querySelectorAll('section');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle("hidden");
+        }
+
+        hamburgerBtn.addEventListener("click", toggleMobileMenu);
+        closeMenuBtn.addEventListener("click", toggleMobileMenu);
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener("click", toggleMobileMenu);
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.classList.contains('hidden') && !mobileMenu.contains(event.target) && event.target !== hamburgerBtn) {
+                toggleMobileMenu();
+            }
+        });
+
+        function updateActiveNavLink() {
+            let currentSectionId = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 100) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === currentSectionId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNavLink);
+
+        const blogPosts = [
+            {
+                title: "Top 5 Destinations in Rawalpindi",
+                content: "Explore the best places to visit in Rawalpindi with our reliable transport services.",
+                imageUrl: "https://images.unsplash.com/photo-1614707241113-4177c61ad7b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                date: "2024-07-28"
+            },
+            {
+                title: "Getting Around Westridge 3: A Complete Guide",
+                content: "Learn about the most efficient ways to travel within Westridge 3.",
+                imageUrl: "https://images.unsplash.com/photo-1580489944062-e3b1dd384242?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                date: "2024-07-25"
+            },
+            {
+                title: "New Airport Shuttle Service Launched",
+                content: "We are excited to announce our new dedicated shuttle service to Islamabad Airport.",
+                imageUrl: "https://images.unsplash.com/photo-1591871504188-1398a5149457?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                date: "2024-07-20"
+            },
+        ];
+
+        const blogPostsContainer = document.getElementById("blog-posts");
+        const viewAllBtn = document.getElementById("view-all-btn");
+
+        function displayBlogPosts(posts) {
+            blogPostsContainer.innerHTML = '';
+            posts.forEach(post => {
+                const postElement = document.createElement("div");
+                postElement.classList.add("bg-white", "rounded-lg", "shadow-md", "p-4", "hover:shadow-lg", "transition", "duration-300");
+                postElement.innerHTML = `
+                    <img src="${post.imageUrl}" alt="${post.title}" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-2">${post.title}</h3>
+                    <p class="text-gray-700 mb-4">${post.content}</p>
+                    <p class="text-gray-500 text-sm">Published: ${post.date}</p>
+                `;
+                blogPostsContainer.appendChild(postElement);
+            });
+        }
+
+        displayBlogPosts(blogPosts.slice(0, 2));
+
+        viewAllBtn.addEventListener("click", () => {
+            displayBlogPosts(blogPosts);
+            viewAllBtn.style.display = "none";
+        });
+
+        const contactForm = document.getElementById('contact-form');
+
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
+
+            alert('Thank you for your message! We will get back to you shortly.');
+
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>
